@@ -7,8 +7,8 @@ tags:
 - Python
 - Beginner
 - BigData
-- Pandas
 - NumPy
+
 ---
 
 **AI의 질을 높이는 빅데이터의 중요성을 인식하고, 첫 번째 프로젝트인 '기계-인간 감정 수용성'에서 제시한 윤리적 AI의 비전을 기술적으로 실현하기 위해 Python 학습을 시작했습니다.** 이 프로젝트는 제가 컴퓨터 공학도로서 Python의 기초를 습득하고, 대용량 데이터 처리에 필수적인 핵심 라이브러리(NumPy, Pandas)를 익혀 빅데이터 분석의 기초를 다진 과정을 기록한 포트폴리오입니다. 단편적인 지식 나열이 아닌, **데이터 처리의 논리적 흐름**을 파악하는 데 중점을 두었습니다.
@@ -29,68 +29,34 @@ tags:
 ```python
 # [1] 파이썬의 기본 자료형 학습 (리스트와 딕셔너리)
 my_list = [10, 20, 30]
-# **[강조]** 리스트에 원소 추가: O(1)의 시간 복잡도로 데이터 끝에 추가됩니다.
+# 리스트에 원소 추가: O(1)의 시간 복잡도로 데이터 끝에 추가됩니다.
 my_list.append(40) 
 print(f"업데이트된 리스트: {my_list}") 
 
 my_dict = {"name": "Alice", "age": 30}
-# **[강조]** 딕셔너리는 키를 사용해 데이터에 접근합니다.
+# 딕셔너리는 키를 사용해 데이터에 접근합니다.
 print(f"이름 접근: {my_dict['name']}") 
 
-# --- [2] 제어 흐름 (조건문/반복문)을 이용한 데이터 처리 기초 ---
-print("\n--- [2] 조건문과 반복문을 활용한 데이터 처리 로직 ---")
-scores = [85, 92, 78, 65, 95]
-passing_threshold = 80
-passed_students = 0
+# --- [2] 간단한 조건문 (if/else) 사용 ---
+number = 15
+if number > 0:
+    print(f"\n{number}은/는 양수입니다.")
+else:
+    print(f"\n{number}은/는 양수가 아닙니다.")
 
-for score in scores: # 반복문을 사용하여 모든 데이터를 순회합니다.
-    # **[강조]** if 조건문을 사용하여 합격 여부를 판단합니다.
-    if score >= passing_threshold: 
-        passed_students += 1
-        print(f"점수 {score}: 합격입니다.")
-    else:
-        print(f"점수 {score}: 불합격입니다.")
-print(f"총 합격자 수: {passed_students}")
+# --- [3] 간단한 반복문  사용 ---
+fruits = ["사과", "바나나", "체리"]
+print("\n과일 목록:")
+for fruit in fruits:
+    print(f" - {fruit}")
 
-# --- [2-1] 함수를 이용한 데이터 계산 및 재사용 (초보자용) ---
-print("\n--- [2-1] 함수를 이용한 데이터 계산 및 재사용 ---")
-# **[강조]** def 키워드를 사용하여 calculate_growth_rate 함수를 정의합니다.
-def calculate_growth_rate(start_value, end_value):
-    if start_value == 0:
-        return 0
-    growth = ((end_value - start_value) / start_value) * 100
-    return growth
+# --- [4] NumPy 배열 생성 및 통계 연산 (빅데이터 효율성 확보) ---
+print("\n--- [4] NumPy 배열 생성 및 통계 연산 ---")
+import numpy as np # NumPy 라이브러리 임포트 (관례적으로 np 사용)
 
-sales_q1 = 1000 
-sales_q2 = 1250 
-# **[강조]** 함수를 호출하여 성장률 계산 결과를 변수에 저장합니다.
-rate = calculate_growth_rate(sales_q1, sales_q2)
-print(f"판매 성장률: {rate:.2f}%") 
-
-# --- [3] NumPy 배열 생성 및 통계 연산 (빅데이터 효율성 확보) ---
-print("\n--- [3] NumPy 배열 생성 및 통계 연산 ---")
-import numpy as np # **[강조]** NumPy 라이브러리 임포트
-
-data_array = np.random.rand(1000) # 1000개의 무작위 데이터로 배열 생성
-print(f"생성된 배열의 형태: {data_array.shape}") 
-# **[강조]** .mean()과 .std() 함수로 배열 전체의 통계치를 즉시 계산합니다.
+data_array = np.random.rand(100) # 100개의 무작위 데이터로 배열 생성
+print(f"생성된 배열의 형태: {data_array.shape}") # 배열의 차원(개수)을 확인합니다.
 mean_val = data_array.mean() 
 std_val = data_array.std()
 print(f"평균: {mean_val:.4f}, 표준편차: {std_val:.4f}") 
 
-# --- [4] Pandas DataFrame 생성 및 데이터 접근 (빅데이터 정제) ---
-print("\n--- [4] Pandas DataFrame 생성 및 데이터 접근 ---")
-import pandas as pd # **[강조]** Pandas 라이브러리 임포트
-
-data = {
-    '도시': ['서울', '부산', '인천', '대구'],
-    '인구(만명)': [970, 340, 290, 240],
-    '면적(km2)': [605, 769, 1063, 883]
-}
-df = pd.DataFrame(data) # **[강조]** 딕셔너리를 데이터프레임으로 변환
-print("--- 기본 DataFrame ---")
-print(df) 
-print("\n--- '인구(만명)' 열 접근 ---")
-print(df['인구(만명)']) 
-print("\n--- 요약 통계 ---")
-print(df.describe())
