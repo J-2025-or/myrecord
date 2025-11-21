@@ -353,3 +353,9 @@ a.navbar-item.is-active {
         }
     }
 }
+/* [오늘의 커밋] 푸터 크레딧 텍스트 최종 스타일링 */
+.final-credit-text {
+    font-size: 1.2em;      /* 글자 크기 확대 (기존보다 20% 크게) */
+    font-weight: 500;      /* 진한 볼드체(700) 대신 적당한 굵기(500)로 설정 */
+    color: #ffffff;        /* 흰색으로 확실하게 표시 */
+}
