@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: Thank you for visiting my site 
 # Description of the Site
-description: you can see my history  what I have been done until now by record 
+description: you can see my history what I have been done until now by record 
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -27,7 +27,7 @@ email: myoowhite@naver.com # 이메일만 활성화됨
 # twitter_username: thedevslot
 # instagram_username: thedevslot
 # linkedin_username: thedevslot
-# github_username:  thedevslot
+# github_username:   
 # youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
 # reddit_username: /
 # behance_username: /
@@ -51,47 +51,45 @@ author-about: I am a Computer Science student dedicated to building a strong fou
 
 # SASS
 sass:
-  sass_dir: _sass
-  style: compressed
-
+  sass_dir: _sass
+  style: compressed
 # Build settings
 plugins:
-  - jekyll-admin
-  - jekyll-feed
-
+  - jekyll-admin
+  - jekyll-feed
 # Permalink
 permalink: "blog/:title"
 
 # Compress
 compress_html:
-  clippings: all
+ clippings: all
 
 # Defaults
 defaults:
-  -
-    scope:
-      type: 'posts'
-    values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags:
-        - ""
-  -
-    scope:
-      type: 'pages'
-    values:
-      layout: page
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
 
 # Exclude
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+ - .sass-cache/
+ - .jekyll-cache/
+ - gemfiles/
+ - Gemfile
+ - Gemfile.lock
+ - node_modules/
+ - vendor/bundle/
+ - vendor/cache/
+- vendor/gems/
+ - vendor/ruby/
