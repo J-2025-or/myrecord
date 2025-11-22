@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: Thank you for visiting my site 
 # Description of the Site
-description: you can see my history  what I have been done until now by record 
+description: you can see my history  what I have been done until now by record 
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -22,76 +22,76 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: thedevslot@gmail.com
-facebook_username: thedevslot
-twitter_username: thedevslot
-instagram_username: thedevslot
-linkedin_username: thedevslot
-github_username:  thedevslot
-youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
-reddit_username: /
-behance_username: /
-dribbble_username: /
-spotify_username: /
+email: myoowhite@naver.com # 이메일만 활성화됨
+# facebook_username: thedevslot
+# twitter_username: thedevslot
+# instagram_username: thedevslot
+# linkedin_username: thedevslot
+# github_username:  thedevslot
+# youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
+# reddit_username: /
+# behance_username: /
+# dribbble_username: /
+# spotify_username: /
 
 # Google Analytics
-google-analytics: UA-163806439-1
+# google-analytics: UA-163806439-1 # 주석 처리됨
 
 # Disqus
-disqus-shortname: thedevslot
+# disqus-shortname: thedevslot # 주석 처리됨
 
 # Name of the Author
-author-name: pretty woman
+author-name: ji min cheon 
 # URL for the Image of the Author
 author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
 # 60 Words About the Author
 author-about: I am a Computer Science student dedicated to building a strong foundation in the field. I am currently expanding my knowledge in key areas, including HCL, Python, SQLD, Operating Systems, and Discrete Mathematics. Welcome to my world!
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/thedevslot
+# author-url: https://github.com/thedevslot # 주석 처리됨
 
 # SASS
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir: _sass
+  style: compressed
 
 # Build settings
 plugins:
-  - jekyll-admin
-  - jekyll-feed
+  - jekyll-admin
+  - jekyll-feed
 
 # Permalink
 permalink: "blog/:title"
 
 # Compress
 compress_html:
-  clippings: all
+  clippings: all
 
 # Defaults
 defaults:
-  -
-    scope:
-      type: 'posts'
-    values:
-      layout: post
-      post-image: ""
-      description: ""
-      tags:
-        - ""
-  -
-    scope:
-      type: 'pages'
-    values:
-      layout: page
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
 
 # Exclude
 exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
