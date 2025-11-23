@@ -22,17 +22,17 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: myoowhite@naver.com # 이메일만 활성화됨
-# facebook_username: thedevslot
-# twitter_username: thedevslot
-# instagram_username: thedevslot
-# linkedin_username: thedevslot
-# github_username:   
-# youtube_channel_id: UCk_93NXYP-U_AOB5GfWlOow
-# reddit_username: /
-# behance_username: /
-# dribbble_username: /
-# spotify_username: /
+email: myoowhite@naver.com 
+# facebook_username:
+# twitter_username:
+# instagram_username:
+# linkedin_username:
+github_username: j-2025-or 
+# youtube_channel_id:
+# reddit_username:
+# behance_username:
+# dribbble_username:
+# spotify_username:
 
 # Google Analytics
 # google-analytics: UA-163806439-1 # 주석 처리됨
@@ -91,5 +91,5 @@ exclude:
  - node_modules/
  - vendor/bundle/
  - vendor/cache/
-- vendor/gems/
+ - vendor/gems/
  - vendor/ruby/
