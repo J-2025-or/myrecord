@@ -31,7 +31,8 @@
             <div class="column has-text-white">
                 <h3>More Links</h3>
                 {% for sitepage in site.html_pages %}
-                {% unless sitepage.url == '/' %}
+                {% assign title = sitepage.title | downcase %}
+                {% unless sitepage.url == '/' or title contains '404' or title contains 'blog' or title contains 'projects' %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
                 </li>
