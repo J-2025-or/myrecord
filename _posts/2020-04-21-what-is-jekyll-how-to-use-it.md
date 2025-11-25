@@ -1,7 +1,7 @@
 ---
 title: Exploratory Data Analysis (Data Science)
 layout: post
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/SamplePost.png?token=AHMQUELVG36IDSA4SZEZ5P26Z64IW"
+
 description: 파이썬, 인공지능, 기계 학습 개발의 핵심 원동력인 데이터 과학의 중요성을 강조하고, 가치 있는 데이터를 추출하고 정제하는 과정과 그 원칙에 대해 다룹니다.
 tags:
 - DataScience
